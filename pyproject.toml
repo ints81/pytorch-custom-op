@@ -1,0 +1,24 @@
+[project]
+name = "pytorch-custom-op"
+version = "0.1.0"
+description = "Package that implements a custom C++/CUDA op for PyTorch."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=2.2.6",
+    "torch>=2.5.0",
+]
+
+# 밑에 코드 전부 없으면 설치 에러 발생
+[build-system]
+requires = [
+    "packaging>=24.2",
+    "setuptools>=77.0.3",
+    "torch>=2.5.0",
+    "numpy>=2.2.6",
+]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["pytorch_custom_op*"]
