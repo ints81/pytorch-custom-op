@@ -3,9 +3,6 @@ from torch.utils.cpp_extension import BuildExtension, CUDAExtension
 
 import torch
 
-with open("README.md", "r", encoding="utf-8") as fh:
-    long_description = fh.read()
-
 # For building custom cuda kernel faster and some cuda functions such as '__nanosleep'
 compute_capability = [str(elem) for elem in torch.cuda.get_device_capability()]
 

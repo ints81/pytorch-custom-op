@@ -7,6 +7,3 @@ custom C++/CUDA operation이 `torch.compile`를 거쳐도 에러가 발생하지
 ## Contents
 1. C++의 `TORCH_LIBRARY` 매크로를 활용한 C++/CUDA operation 만드는 방법
 2. 만든 C++/CUDA operation이 `torch.compile`로 처리될 수 있게 만드는 방법
-
-## TODO
-- 아직 에러 발생. `ImportError: /workspace/pytorch_custom_op/pytorch_custom_op/_C.cpython-312-x86_64-linux-gnu.so: undefined symbol: _ZNK3c107SymBool14guard_or_falseEPKcl`란 에러가 발생 중
